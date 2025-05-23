@@ -50,7 +50,7 @@ class MdlConan(ConanFile):
         self.requires("libdeflate/1.22", override=True)
         self.requires("openexr/3.2.3", override=True)
         self.requires("llvm-core/19.1.7")
-        self.requires("cpython/3.10.14")
+        self.requires("cpython/3.10.14", options={"shared": True})
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
