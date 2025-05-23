@@ -2,3 +2,117 @@ sources:
   "2024.1.1":
     url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2024.1.1.zip"
     sha256: "45393443640C78F5B52C5DA6ECCEFBD698C7DAE486936784F9BF55011C80BD25"
+  "2024.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2024.1.zip"
+    sha256: "81974d3f3f53e80fb253d222b5b75784ef8904f04cb5d771f13477234a4c3ec4"
+  "2024.0.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2024.0.4.zip"
+    sha256: "d4874dd1c4d3dfb506bd2aa5a2053f2c1cdb88b476e143d03e5dab4ecdd5809f"
+  "2024.0.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2024.0.2.zip"
+    sha256: "e0b6985df3b01def2b9627fa70eedbf7d7ed80ee2af351ab31183e252c486d0a"
+  "2024.0.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2024.0.1.zip"
+    sha256: "6bb5e959974c8634cf4f5f111eac36bb4729203ad5e2a9abde0884e9bfbc5de5"
+  "2023.1.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.1.4.zip"
+    sha256: "4f5adc44730437dcd057bfe5f45397af4d7dd5db15dabb6099f0363553aac3bb"
+  "2023.1.3":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.1.3.zip"
+    sha256: "2d7650a2dfa862f936e1e67c9738f45e213ba9a208c82a2bd9b00ea4f3bd06e5"
+  "2023.1.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.1.2.zip"
+    sha256: "237631a19590396e2c6139ef647ab388366968f5637a02f7bf18268c3da1c1ad"
+  "2023.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.1.zip"
+    sha256: "733d707c8ecf4741cab55c92df4b415fa58c96326327a6806705c9fca1f3df90"
+  "2023.0.6":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.0.6.zip"
+    sha256: "0f7d8883c9593d0b581157c4399ea80a7b47ff3d58332e2e3875c0c2f7396e8b"
+  "2023.0.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.0.4.zip"
+    sha256: "dc2fd734cc89e29b6d81f0f9b4c2007bf58ad716f823f30fa4b3572f6fa459f6"
+  "2023":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2023.zip"
+    sha256: "abef34c7138a16bf38026ae02894bc21c7e34120cad9a1f96815e38c8a25139a"
+  "2022.1.7":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.1.7.zip"
+    sha256: "b0a75211997b48c4ae53f1c64fe4d5f11de5802b9f0c532e4f52ac236e68c29b"
+  "2022.1.6":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.1.6.zip"
+    sha256: "30e016fb5e51529a462d4de3ee59a89cbab595be98f2646c05e3ba986566a348"
+  "2022.1.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.1.4.zip"
+    sha256: "ad4202dac4ceb873ee4de93120abe695fa7fb7750396cd2f8520bdec54da8c04"
+  "2022.1.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.1.1.zip"
+    sha256: "9a347f861ee04616aeff82ec2c2bce9e7e6dd2e78ab5decfd6c7973b50d532ca"
+  "2022.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.1.zip"
+    sha256: "5f2df8a367446bb42ec5afc1676645d9361af8d117ae0f62cafd24bd321d0a7f"
+  "2022":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2022.zip"
+    sha256: "dc1f577713268b7a84b26f8e4c13c883d529a0cea57e6f541c351cfe93e9723e"
+  "2021.1.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.1.4.zip"
+    sha256: "1b57f46923fe58855aacb95f8d83184ddbf501b890032b45f3c1d9023b1f0423"
+  "2021.1.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.1.2.zip"
+    sha256: "3d20b85366e08690068df521cd01bdcf4c16457badbe05b0f1617eda8f3f9601"
+  "2021.1.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.1.1.zip"
+    sha256: "62142b5cf69f78ef0457f733f54471a2b6d3e38253c4e03c1ed6135e281d4fce"
+  "2021.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.1.zip"
+    sha256: "ce2ac082435e62c13569ce579333ffa7df2612eb2157d7a38e3f6137887efbb2"
+  "2021.0.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.0.4.zip"
+    sha256: "a826c4f243f9036122a15d56925ef46467cc471fe351329025102ff34279d28a"
+  "2021.0.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.0.1.zip"
+    sha256: "534d2cb1d607f84ae4ed92d503e27ca4acee5bb9c1b6d9081c270c85e05b74a4"
+  "2021":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2021.zip"
+    sha256: "83b8ddab755eb1d905619a4cf05e1ee39863328e3407d0ba08e1b0e9fab9d248"
+  "2020.1.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.1.2.zip"
+    sha256: "83a4456467a96ee509d6bc03c0a073ade6e097e141eed99104244f6c9721971e"
+  "2020.1.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.1.1.zip"
+    sha256: "ee2fd78beb9c7f7046e37ec23e2d0b13b999ca0e13a6aec4b5ff40e41a9a39ed"
+  "2020.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.1.zip"
+    sha256: "372a1ff1bc0fd93918bb935a0e25f7075c3da813e743fd2d1765aa8706f9c14a"
+  "2020.0.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.0.2.zip"
+    sha256: "a87be6c0c8bb707358cdd2328be7041cb2e0fe0c9a63714b1e586f8508908f29"
+  "2020.0.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.0.1.zip"
+    sha256: "95c0cb9787abf804bef5cdfc0babe8875fd95074de912c242fe741aaaa9cefa2"
+  "2020":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2020.zip"
+    sha256: "32b1e2d30e89a6a71aee22c0082c726a924d0eea62e3c33dfddcefa86499bc2e"
+  "2019.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2019.2.zip"
+    sha256: "a6c2d92c548547aa9229d050b4c1384424a9c77b8e9017b58b549602a894f63c"
+  "2019.1.4":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2019.1.4.zip"
+    sha256: "419fa658c04caf118347cb58196b66272920a543a948748de7be919186c13d22"
+  "2019.1.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2019.1.1.zip"
+    sha256: "2d911229558c3f9d038cb3e6b061d894a38cf83d4dd896a0d4dae8fad2b29b63"
+  "2019.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2019.1.zip"
+    sha256: "6d3670111138dd32151c46d1361ac6021ce371fab9cec9792a252f1559fa7df5"
+  "2019":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2019.zip"
+    sha256: "f997234674c5c13fffad019d33123398e150f6681d240b9285a890556d66709f"
+  "2018.1.2":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2018.1.2.zip"
+    sha256: "2dc990c6337cdda1b8fb3eb248f814761dfd771bc831e6e1176143166087232e"
+  "2018.1.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2018.1.1.zip"
+    sha256: "6911924b4376704522cec39b055ed5233e661acde2ab20e21da280bfcfa2cfbc"
+  "2018.1":
+    url: "https://github.com/NVIDIA/MDL-SDK/archive/refs/tags/2018.1.zip"
+    sha256: "1ebd722a4764494a31d9e7320593582901f6b91ef36e9dc1b23bf7adeea02266"

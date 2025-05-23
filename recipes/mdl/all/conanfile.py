@@ -46,10 +46,13 @@ class MdlConan(ConanFile):
     def requirements(self):
         self.requires("boost/1.84.0")
         self.requires("openimageio/2.5.18.0")
-        self.requires("openexr/3.2.3")
+        self.requires("openexr/3.2.3", override=True)
         self.requires("zstd/1.5.6", override=True)
         self.requires("libdeflate/1.22", override=True)
         self.requires("llvm-core/19.1.7")
+        if self.version < "2022.0.1":
+            self.requires("jasper/4.0.0")
+            self.requires("freeimage/3.18.0")
         # self.requires("cpython/3.12.7")
 
     def source(self):
@@ -94,7 +97,6 @@ class MdlConan(ConanFile):
         tc.variables["BUILD_SHARED_LIBS"] = self.options.shared
         if self.settings.os == "Windows":
             tc.variables["MDL_MSVC_DYNAMIC_RUNTIME"] = False
-
         # Convert all paths to use forward slashes
         source_folder = self.source_folder.replace("\\", "/")
         tc.variables["MDL_BASE_FOLDER"] = source_folder
@@ -106,6 +108,12 @@ class MdlConan(ConanFile):
         tc.variables["MDL_USE_LOCAL_DEPENDENCIES"] = True
         tc.variables["MDL_BUILD_SDK_EXAMPLES"] = False
         tc.variables["MDL_BUILD_CORE_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_CUDA_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_OPENGL_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_VULKAN_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_QT_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_D3D12_EXAMPLES"] = False
+        tc.variables["MDL_ENABLE_OPTIX7_EXAMPLES"] = False
         tc.variables["MDL_BUILD_ARNOLD_PLUGIN"] = False
         tc.variables["MDL_BUILD_WITHOUT_CUDA_DRIVER"] = not self.options.use_cuda
         tc.variables["MDL_BUILD_DOCUMENTATION"] = False
