@@ -35,7 +35,7 @@ class MdlConan(ConanFile):
         "use_cuda": [True, False],
     }
     default_options = {
-        "shared": False,
+        "shared": True,
         "fPIC": True,
         "use_cuda": False,
     }
@@ -80,37 +80,20 @@ class MdlConan(ConanFile):
         ]:
             raise ConanInvalidConfiguration(f"{self.settings.os} is not supported")
 
-        """
-        if self.settings.os in ["Windows", "Macos"] and not self.options.shared:
-            raise ConanInvalidConfiguration(f"Static builds are not supported on {self.settings.os}")
-        if self.settings.os in ["iOS", "Android"] and self.options.shared:
-            raise ConanInvalidConfiguration(f"Shared builds are not supported on {self.settings.os}")
-
+        if not self.options.shared:
+            raise ConanInvalidConfiguration("Static builds are not supported")
         if self.settings.build_type not in ["Debug", "RelWithDebInfo", "Release"]:
             raise ConanInvalidConfiguration(f"{self.settings.build_type} build_type is not supported")
-        """
 
         check_min_vs(self, 150)
         check_min_cppstd(self, 11)
 
-    @property
-    def _target_build_platform(self):
-        return {
-            "Windows": "windows",
-            "Linux": "linux",
-            "Macos": "mac",
-            "Android": "android",
-            "iOS": "ios",
-        }.get(str(self.settings.os))
-
     def generate(self):
         tc = CMakeToolchain(self)
-        # tc.variables["STATIC_WINCRT"] = is_msvc_static_runtime(self)
-        # tc.variables["TARGET_BUILD_PLATFORM"] = self._target_build_platform
 
         tc.variables["BUILD_SHARED_LIBS"] = self.options.shared
         if self.settings.os == "Windows":
-            tc.variables["MDL_MSVC_DYNAMIC_RUNTIME"] = self.options.shared
+            tc.variables["MDL_MSVC_DYNAMIC_RUNTIME"] = False
 
         # Convert all paths to use forward slashes
         source_folder = self.source_folder.replace("\\", "/")
@@ -136,10 +119,6 @@ class MdlConan(ConanFile):
 
         tc = CMakeDeps(self)
         tc.generate()
-
-        # env = Environment()
-        # env.define_path("GW_DEPS_ROOT", source_folder)
-        # env.vars(self).save_script("conan_build_vars")
 
     def build(self):
         apply_conandata_patches(self)

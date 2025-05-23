@@ -102,7 +102,6 @@ bool unload() {
 }
 
 int main() {
-  std::cout << "PATH=" << std::getenv("PATH") << std::endl;
   // Initialize MDL SDK (implicit linking)
   mi::base::Handle<mi::neuraylib::INeuray> neuray(load_and_get_ineuray());
   neuray->start();
