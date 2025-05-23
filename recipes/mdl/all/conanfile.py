@@ -46,14 +46,11 @@ class MdlConan(ConanFile):
     def requirements(self):
         self.requires("boost/1.84.0")
         self.requires("openimageio/2.5.18.0")
-        self.requires("openexr/3.2.3", override=True)
         self.requires("zstd/1.5.6", override=True)
         self.requires("libdeflate/1.22", override=True)
+        self.requires("openexr/3.2.3", override=True)
         self.requires("llvm-core/19.1.7")
-        if self.version < "2022.0.1":
-            self.requires("jasper/4.0.0")
-            self.requires("freeimage/3.18.0")
-        # self.requires("cpython/3.12.7")
+        self.requires("cpython/3.10.14")
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
